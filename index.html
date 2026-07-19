@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="gold">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <!-- Google Fonts for Modern Classic Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+  <div id="canvas-container"></div>
+
+  <!-- Color Switcher -->
+  <div class="color-switcher">
+    <button class="switcher-toggle" aria-label="Toggle Theme Colors">
+      <i data-lucide="palette"></i>
+    </button>
+    <div class="color-options">
+      <button class="color-btn gold" data-theme="gold" title="Classic White/Gold"></button>
+      <button class="color-btn cyan" data-theme="cyan" title="Electric Cyan"></button>
+      <button class="color-btn cream" data-theme="cream" title="Soft Cream"></button>
+      <button class="color-btn green" data-theme="green" title="Light Green"></button>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#featured-projects">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+      <div class="hero-content fade-in">
+        <h2 class="hero-subtitle">
+          <span class="typing-text"></span><span class="typing-cursor">|</span>
+        </h2>
+        <h1 class="hero-title">Hi, I'm <span class="accent-text">Divya Prakash Gaurav</span></h1>
+        <p class="hero-description">I build powerful, interactive, and visually stunning web experiences. Blending
+          technology with art to create digital masterpieces.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container fade-in">
+        <h2 class="section-title">About <span class="accent-text">Me</span></h2>
+        <div class="about-grid">
+          <div class="about-image-wrapper">
+            <div class="about-image-placeholder">
+              <!-- PLACEHOLDER FOR PROFILE IMAGE -->
+              <img src="/src/assets/Gaurav Pandey.jpg" alt="Profile Image"
+                style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div class="image-glow"></div>
+          </div>
+          <div class="about-text">
+            <p>I’m a passionate front-end web developer from Bihar, currently pursuing a <strong>Bachelor of Technology</strong> in Computer Science at
+              IES University.
+              I love turning ideas into interactive and visually engaging digital experiences.
+              Along with building modern, responsive websites using HTML, CSS, JavaScript, React, and C++, I also
+              develop desktop applications.
+              One of my key projects is EchoLock, a custom-built desktop application focused on smart voice-based system
+              control,
+              which reflects my interest in creating practical, real-world software solutions. I enjoy designing clean,
+              user-friendly interfaces and bringing creativity into every project I work on. With over 5 self-driven
+              projects completed,
+              I’m constantly learning, experimenting with new tools, and pushing my limits as a developer. Currently,
+              I’m exploring Python and backend development to grow into a full-stack developer.
+              I genuinely enjoy solving problems through code and building products that are not only visually appealing
+              but also intuitive, efficient, and impactful.
+              My goal is to create digital products—both web and desktop—that make life easier,
+              feel smooth to use, and leave a strong impression on users.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Technologies Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container fade-in">
+        <h2 class="section-title">My <span class="accent-text">Skills</span></h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="skill-name">HTML & CSS</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+            <div class="skill-name">JavaScript</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-cube"></i></div>
+            <div class="skill-name">Three.js</div>
+          </div>
+          <!-- <div class="skill-card">
+            <div class="skill-icon"><i data-lucide="braces"></i></div>
+            <div class="skill-name">C++</div>
+          </div> -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+            <div class="skill-name">Java</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+            <div class="skill-name">Database (SQL)</div>
+          </div>
+          <!-- <div class="skill-card">
+            <div class="skill-icon"><i data-lucide="palette"></i></div>
+            <div class="skill-name">UI/UX Design</div>
+          </div> -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-brands fa-github"></i></div>
+            <div class="skill-name">Git & GitHub</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Featured Projects Section -->
+    <section id="featured-projects" class="section featured-projects-section">
+      <div class="container fade-in">
+        <h2 class="section-title">Featured <span class="accent-text">Projects</span></h2>
+        <p class="section-subtitle">A curated selection of my best work.</p>
+        <div class="custom-projects-grid">
+          <!-- Project Card 1 -->
+          <div class="custom-project-card">
+            <div class="project-image-placeholder">
+              <img src="/src/assets/project1-screenshot.jpg" alt="E-Commerce Project"
+                style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div class="custom-project-content">
+              <h3 class="custom-project-title">Get Medical Seat <br> Educational Counseling Website</h3>
+              <div class="custom-project-tags">
+                <span class="tag">Three.js</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">WebGL</span>
+              </div>
+              <p class="custom-project-desc">A responsive website for medical seat booking and educational counseling services.</p>
+              <a href="https://www.getmedicalseat.com/" class="btn btn-secondary btn-sm">View Project</a>
+            </div>
+          </div>
+          <!-- Project Card 2 -->
+          <div class="custom-project-card">
+            <div class="project-image-placeholder">
+              <img src="/src/assets/project2-screenshot.jpg" alt="Modern Portfolio Template"
+                style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div class="custom-project-content">
+              <h3 class="custom-project-title">YouMeUs <br> Homemade Pickle Website</h3>
+              <div class="custom-project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">UI/UX</span>
+              </div>
+              <p class="custom-project-desc">A visually appealing website for a local pickle brand showcasing their products and services.</p>
+              <a href="#" class="btn btn-secondary btn-sm">View Project</a>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="custom-project-card">
+            <div class="project-image-placeholder">
+              <img src="/src/assets/echolock-screenshot.jpg" alt="EchoLock Security"
+                style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div class="custom-project-content">
+              <h3 class="custom-project-title">Desktop Application <br>Screen Lock App</h3>
+              <div class="custom-project-tags">
+                <span class="tag">C#</span>
+                <span class="tag">.NET Framework</span>
+                <span class="tag">Security</span>
+              </div>
+              <p class="custom-project-desc">A pure offline, voice-controlled desktop lock screen security application
+                providing robust system access control.</p>
+              <a href="https://divyaprakashgaurav.github.io/EchoLock/" class="btn btn-secondary btn-sm">View Project</a>
+            </div>
+          </div>
+
+          <!-- Project Card 4 -->
+          <!-- <div class="custom-project-card">
+            <div class="project-image-placeholder">
+              <img src="/src/assets/youmeus-screenshot.jpg" alt="YouMeUs Showcase"
+                style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div class="custom-project-content">
+              <h3 class="custom-project-title">YouMeUs Brand Showcase</h3>
+              <div class="custom-project-tags">
+                <span class="tag">Web Dev</span>
+                <span class="tag">UI/UX</span>
+                <span class="tag">Portfolio</span>
+              </div>
+              <p class="custom-project-desc">A highly visual digital showcase website and product portfolio crafted
+                specifically for a regional pickle company.</p>
+              <a href="#" class="btn btn-secondary btn-sm">View Project</a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (GitHub API) -->
+    <section id="projects" class="section projects-section">
+      <div class="container fade-in">
+        <h2 class="section-title">My <span class="accent-text">Projects</span></h2>
+        <p class="section-subtitle">Live synchronization with my GitHub repositories.</p>
+        <div id="github-repos" class="projects-grid">
+          <!-- Repos will be dynamically injected here -->
+          <div class="loading-spinner"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container fade-in">
+        <h2 class="section-title">Get In <span class="accent-text">Touch</span></h2>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3>Let's build something amazing together.</h3>
+            <p>Feel free to reach out for collaborations, freelance projects, or just to say hi!</p>
+            <div class="social-links">
+              <a href="#" target="_blank" class="social-link" title="GitHub">
+                <i class="fa-brands fa-square-github"></i>
+              </a>
+              <a href="#" target="_blank" class="social-link" title="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="mailto:email@example.com" class="social-link" title="Email">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Created with ❤️. All rights reserved.</p>
+  </footer>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
